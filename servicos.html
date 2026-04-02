@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JM Jardins - Serviços</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
+<style>
+    /* header copiado da galeria pra bater certo */
+    #header {
+background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/image jardim.jpg') !important; 
+        background-size: cover !important;
+        background-position: center !important;
+background-attachment: fixed !important;
+        /* topo mais curto pra mostrar logo os servicos */
+        min-height: 50vh; 
+        display: flex;
+        justify-content: center;
+    flex-direction: column;
+        align-items: center;
+        border: none !important;
+margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+
+    #header:before, #header:after { display: none !important; background: none !important; }
+    
+    #nav {
+        position: absolute; top: 20px;
+        background: transparent !important;
+        border: none !important; box-shadow: none !important;
+        width: 100%; z-index: 100;
+    }
+
+    #nav ul li a {
+        color: #ffffff !important;
+        font-family: 'Montserrat', sans-serif !important; font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    #header h1, #header p {
+        color: #ffffff !important;
+        margin: 0 !important; text-transform: uppercase; 
+        font-family: 'Montserrat', sans-serif !important; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    #header p {
+        letter-spacing: 2px; font-size: 1.1em;
+        margin-top: 10px !important; font-weight: 400;
+    }
+
+    /* logo botao centrado */
+    .logo-center { margin: 0 auto 1.5em auto; display: block; }
+    .logo-button img { width: auto; height: 180px; }
+
+    /* titulo que nao e link */
+    #header h1 span { 
+        font-size: 2.0em; color: #ffffff !important; 
+        letter-spacing: 4px; font-weight: 900; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+    }
+
+    /* cena dos servicos */
+    .servicos-fundo {
+        background-color: #ffffff; /* fundo mt branco pra destacar as caixas */
+        padding: 4em 0;
+        text-align: center;
+    }
+
+    /* fiz umas caixas po texto nao ficar solto na folha */
+    .caixa-servico {
+        display: inline-block;
+        width: 280px; /* largura de cada caixa */
+        margin: 15px;
+        padding: 30px 20px;
+        background: #fdfdfd;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        vertical-align: top;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.05); /* sombrinha basica */
+    }
+
+    .caixa-servico h3 {
+        font-family: 'Montserrat', sans-serif; font-weight: 700;
+        color: #222; margin-bottom: 15px; text-transform: uppercase; font-size: 1.1em;
+    }
+
+    .caixa-servico p {
+        font-family: 'Montserrat', sans-serif; color: #555; font-size: 0.95em;
+    }
+
+    /* o botao de orcamento grátis no fundo */
+    .botao-orcamento {
+        display: inline-block;
+        background-color: #222; /* escuro pra ficar a combinar com o site */
+        color: #ffffff !important;
+        font-family: 'Montserrat', sans-serif; font-weight: 700;
+        padding: 15px 30px;
+        text-decoration: none; border-radius: 5px;
+        margin-top: 30px; text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    /* footer igual ao resto do site */
+    #footer {
+        border: none !important;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/image jardim.jpg') !important;
+        background-size: cover !important;
+        padding: 4em 0 !important;
+        background-position: center !important; background-attachment: fixed !important;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        text-align: center !important;
+    }
+
+    #footer p {
+        color: #ffffff !important; font-size: 1em !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700 !important; margin: 5px auto !important;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        border: none !important; padding: 0 !important;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+    }
+</style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <header id="header">
+            <div class="inner">
+                <header>
+                    <h1>
+                        <a href="index.html" class="logo-button logo-center">
+                            <img src="img/logo.png" alt="JM Jardins Logo">
+                        </a>
+                        <span>JM JARDINS</span>
+                    </h1>
+                    <p>OS NOSSOS SERVIÇOS</p>
+                </header>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="historia.html">Sobre Nós</a></li>
+                    <li><a href="contactos.html">Contacte-nos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper style1 servicos-fundo">
+            <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 900; margin-bottom: 40px; color: #222;">O Que Fazemos</h2>
+            
+            <div style="text-align: center;">
+                <div class="caixa-servico">
+                    <h3>Construção de Jardins</h3>
+                    <p>Construção de espaços desde a preparação do solo até à plantação.</p>
+                </div>
+
+                <div class="caixa-servico">
+                    <h3>Manutenção de Jardins</h3>
+                    <p>Corte de relva, poda de arbustos e limpeza geral.</p>
+                </div>
+
+                <div class="caixa-servico">
+                    <h3>Manutenção de Piscinas</h3>
+                    <p>Tratamento químico da água e limpeza profissional.</p>
+                </div>
+
+                <div class="caixa-servico">
+                    <h3>Sistemas de Rega</h3>
+                    <p>Instalação de regas automáticas.</p>
+                </div>
+
+                <div class="caixa-servico">
+                    <h3>Limpeza de Terrenos</h3>
+                    <p>Limpeza de áreas florestais e terrenos particulares.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="contactos.html" class="botao-orcamento">Solicitar Orçamento Grátis</a>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="container">
+                <p>&copy; JM Jardins - Construção e Manutenção</p>
+                <p style="font-size: 0.8em !important; font-weight: 400 !important;">Atuamos em Vila Nova de Famalicão e Arredores</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JM Jardins - Sobre Nós</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
+<style>
+    /* header copiado das outras pags */
+    #header {
+background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/image jardim.jpg') !important; 
+        background-size: cover !important;
+        background-position: center !important;
+background-attachment: fixed !important;
+        min-height: 50vh; 
+        display: flex;
+        justify-content: center;
+    flex-direction: column;
+        align-items: center;
+        border: none !important;
+margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+
+    #header:before, #header:after { display: none !important; background: none !important; }
+    
+    #nav {
+        position: absolute; top: 20px;
+        background: transparent !important;
+        border: none !important; box-shadow: none !important;
+        width: 100%; z-index: 100;
+    }
+
+    #nav ul li a {
+        color: #ffffff !important;
+        font-family: 'Montserrat', sans-serif !important; font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    #header h1, #header p {
+        color: #ffffff !important;
+        margin: 0 !important; text-transform: uppercase; 
+        font-family: 'Montserrat', sans-serif !important; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    #header p {
+        letter-spacing: 2px; font-size: 1.1em;
+        margin-top: 10px !important; font-weight: 400;
+    }
+
+    /* logo botao centrado */
+    .logo-center { margin: 0 auto 1.5em auto; display: block; }
+    .logo-button img { width: auto; height: 180px; }
+
+    #header h1 span { 
+        font-size: 2.0em; color: #ffffff !important; 
+        letter-spacing: 4px; font-weight: 900; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+    }
+
+    /* fundo da secção da historia */
+    .historia-fundo {
+        background-color: #ffffff; 
+        padding: 4em 0;
+        text-align: center;
+    }
+
+    /* Estilos pa logo da empresa (sem bordas redondas) */
+    .logo-sobre {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .logo-sobre img {
+        height: 120px;
+        width: auto;
+    }
+
+    /* Estilos pa foto redonda tipo redonde do Sr. Jose */
+    .perfil-foto {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .perfil-foto img {
+        width: 180px; 
+        height: 180px; 
+        object-fit: cover; 
+        border-radius: 50%; /* AQUI FICA REDONDO */
+        border: 5px solid #eaeaea; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    }
+
+    /* caixa pa alinhar o texto direitinho */
+    .caixa-texto {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left; 
+        font-family: 'Montserrat', sans-serif;
+        color: #444;
+        line-height: 1.8; 
+        font-size: 1.1em;
+        padding: 0 20px;
+    }
+
+    .caixa-texto p {
+        margin-bottom: 20px;
+    }
+
+    h2, h3, #footer p {
+        text-transform: uppercase !important;
+    }
+
+    /* footer do costume */
+    #footer {
+        border: none !important;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/image jardim.jpg') !important;
+        background-size: cover !important;
+        padding: 4em 0 !important;
+        background-position: center !important; background-attachment: fixed !important;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        text-align: center !important;
+    }
+
+    #footer p {
+        color: #ffffff !important; font-size: 1em !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700 !important; margin: 5px auto !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        border: none !important; padding: 0 !important;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+    }
+</style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <header id="header">
+            <div class="inner">
+                <header>
+                    <h1>
+                        <a href="index.html" class="logo-button logo-center">
+                            <img src="img/logo.png" alt="JM Jardins Logo">
+                        </a>
+                        <span>JM JARDINS</span>
+                    </h1>
+                    <p>A NOSSA HISTÓRIA</p>
+                </header>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="historia.html">Sobre Nós</a></li>
+                    <li><a href="contactos.html">Contacte-nos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper style1 historia-fundo">
+            
+            <div class="logo-sobre">
+                <img src="img/logo.png" alt="JM Jardins Logo Pequeno">
+            </div>
+
+            <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 2.5em; margin-bottom: 30px; color: #222;">Quem Somos</h2>
+            
+            <div class="caixa-texto">
+                
+            </div>
+
+            <div class="perfil-foto">
+                <img src="img/IMG_SR Jose.Jpeg" alt="Sr. José Martins - Fundador">
+            </div>
+
+            <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 2.5em; margin-bottom: 30px; color: #222;">Quem Sou</h2>
+
+            <div class="caixa-texto">
+                
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            <div class="container">
+                <p>&copy; JM Jardins - Construção e Manutenção</p>
+                <p style="font-size: 0.8em !important; font-weight: 400 !important;">Atuamos em Vila Nova de Famalicão e Arredores</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

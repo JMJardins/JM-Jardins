@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JM Jardins - Contactos</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+<style>
+    /* header copiado das outras pags */
+    #header {
+background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/image jardim.jpg') !important; 
+        background-size: cover !important;
+        background-position: center !important;
+background-attachment: fixed !important;
+        min-height: 50vh; 
+        display: flex;
+        justify-content: center;
+    flex-direction: column;
+        align-items: center;
+        border: none !important;
+margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+
+    #header:before, #header:after { display: none !important; background: none !important; }
+    
+    #nav {
+        position: absolute; top: 20px;
+        background: transparent !important;
+        border: none !important; box-shadow: none !important;
+        width: 100%; z-index: 100;
+    }
+
+    #nav ul li a {
+        color: #ffffff !important;
+        font-family: 'Montserrat', sans-serif !important; font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    #header h1, #header p {
+        color: #ffffff !important;
+        margin: 0 !important; text-transform: uppercase; 
+        font-family: 'Montserrat', sans-serif !important; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    #header p {
+        letter-spacing: 2px; font-size: 1.1em;
+        margin-top: 10px !important; font-weight: 400;
+    }
+
+    /* logo como botao centrado */
+    .logo-center { margin: 0 auto 1.5em auto; display: block; }
+    .logo-button img { width: auto; height: 180px; }
+
+    #header h1 span { 
+        font-size: 2.0em; color: #ffffff !important; 
+        letter-spacing: 4px; font-weight: 900; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+    }
+
+    /* fundo da secção de contactos */
+    .contactos-fundo {
+        background-color: #ffffff; 
+        padding: 4em 0;
+        text-align: center;
+    }
+
+    /* css po formulario - VERDE */
+    .caixa-formulario {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #2E5A27; /* Verde escuro do tema */
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 15px rgba(0,0,0,0.15); /* sombra um bocado mais forte */
+        text-align: left; 
+    }
+
+    /* texto das labels agora a branco po contraste */
+    .caixa-formulario label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700; color: #ffffff;
+        display: block; margin-bottom: 8px;
+    }
+
+    /* inputs e a caixa de mensagem */
+    .caixa-formulario input, .caixa-formulario textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: none; /* tirei a borda pa ficar mais clean no fundo verde */
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+    }
+
+    /* o botao de enviar */
+    .caixa-formulario button {
+        background-color: #111111; /* Preto para destacar no verde */
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif; font-weight: 700;
+        padding: 15px 30px;
+        border: none; border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 100%; 
+        letter-spacing: 1px;
+    }
+
+    .caixa-formulario button:hover {
+        background-color: #333333; 
+    }
+
+    /* css po bloco de contactos rápidos (telefone e whatsapp) */
+    .info-contacto-rapido {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borda branca muito suave pa separar */
+    }
+
+    .info-contacto-rapido div {
+        display: block; /* pa meter um por baixo do outro */
+        color: #ffffff !important;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+        margin: 8px auto; /* espacamento entre eles */
+    }
+
+    .info-contacto-rapido i {
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    .info-contacto-rapido a {
+        color: #ffffff !important;
+        text-decoration: none;
+        font-weight: 700; /* deixar o numero em negrito */
+    }
+
+    /* footer do costume */
+    #footer {
+        border: none !important;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/image jardim.jpg') !important;
+        background-size: cover !important;
+        padding: 4em 0 !important;
+        background-position: center !important; background-attachment: fixed !important;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        text-align: center !important;
+    }
+
+    #footer p {
+        color: #ffffff !important; font-size: 1em !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700 !important; margin: 5px auto !important;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        border: none !important; padding: 0 !important;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+    }
+</style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <header id="header">
+            <div class="inner">
+                <header>
+                    <h1>
+                        <a href="index.html" class="logo-button logo-center">
+                            <img src="img/logo.png" alt="JM Jardins Logo">
+                        </a>
+                        <span>JM JARDINS</span>
+                    </h1>
+                    <p>FALE CONNOSCO</p>
+                </header>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="historia.html">Sobre Nós</a></li>
+                    <li><a href="contactos.html">Contacte-nos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper style1 contactos-fundo">
+            <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 2.5em; margin-bottom: 10px; color: #222;">Contacte-nos</h2>
+            
+            <p style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.3em; color: #111; margin-bottom: 40px; text-align: center;">
+    Preencha o formulário abaixo para pedir<br>um orçamento grátis ou tirar dúvidas.
+</p>
+
+            <div class="caixa-formulario">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <img src="img/logo.png" alt="Mini Logo JM" style="height: 80px; width: auto;">
+                </div>
+
+                <div class="info-contacto-rapido">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>Telefone: 936 266 510</span> </div>
+                    <div>
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: <a href="https://wa.me/936266510" target="_blank">936 266 510</a></span> </div>
+                </div>
+
+                <form action="#" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="O seu nome completo" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="O seu endereço de email" required>
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="container">
+                <p>&copy; JM Jardins - Construção e Manutenção</p>
+                <p style="font-size: 0.8em !important; font-weight: 400 !important;">Atuamos em Vila Nova de Famalicão e Arredores</p>
+                
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JM Jardins - Galeria</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
+<style>
+    /* copiar o header da index pra ficar igual mas com a logo */
+    #header {
+background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/image jardim.jpg') !important; 
+        background-size: cover !important;
+        background-position: center !important;
+background-attachment: fixed !important;
+        /* pus 50vh em vez de 100vh pra o topo ficar mais pequeno e as fotos aparecerem logo */
+        min-height: 50vh; 
+        display: flex;
+        justify-content: center;
+    flex-direction: column;
+        align-items: center;
+        border: none !important;
+margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* tirar os filtros e cores estranhas que tavam no template */
+    #header:before, #header:after { display: none !important; background: none !important; }
+    
+    #nav {
+        position: absolute; top: 20px;
+        background: transparent !important;
+        border: none !important; box-shadow: none !important;
+        width: 100%; z-index: 100;
+    }
+
+    #nav ul li a {
+        color: #ffffff !important;
+        font-family: 'Montserrat', sans-serif !important; font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    /* textos do topo */
+    #header h1, #header p {
+        color: #ffffff !important;
+        margin: 0 !important; text-transform: uppercase; 
+        font-family: 'Montserrat', sans-serif !important; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    /* subtítulo em baixo do título */
+    #header p {
+        letter-spacing: 2px; font-size: 1.1em;
+        margin-top: 10px !important; font-weight: 400;
+    }
+
+    /* centralizar e dar espaço pro texto */
+    .logo-center { margin: 0 auto 1.5em auto; display: block; }
+    
+    /* tamanho da logo e efeito de botão */
+    .logo-button img { width: auto; height: 180px; }
+
+    /* estilo do texto jm jardins, que agora n é link */
+    #header h1 span { 
+        font-size: 2.0em; color: #ffffff !important; 
+        letter-spacing: 4px; font-weight: 900; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* manter o mesmo visual */
+    }
+
+    /* arrumar as fotos da galeria */
+    .galeria-fundo {
+        background-color: #ffffff; /* fundo branco */
+        padding: 4em 0;
+        text-align: center;
+    }
+
+    .galeria-fundo img {
+        width: 300px; 
+        height: 250px;
+        object-fit: cover; /* nao deixa a imagem esticar/esmagar */
+        margin: 10px;
+        border: 2px solid #444; /* borda mais suave que o black puro */
+        border-radius: 5px; /* cantos um bocado redondos pra ficar porreiro */
+    }
+
+    /* footer igual ao da index */
+    #footer {
+        border: none !important;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/image jardim.jpg') !important;
+        background-size: cover !important;
+        padding: 4em 0 !important;
+        background-position: center !important; background-attachment: fixed !important;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        text-align: center !important;
+    }
+
+    #footer p {
+        color: #ffffff !important; font-size: 1em !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700 !important;
+        margin: 0 auto !important;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        border: none !important; padding: 0 !important; margin-bottom: 0 !important;
+    }
+</style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <header id="header">
+            <div class="inner">
+                <header>
+                    <h1>
+                        <a href="index.html" class="logo-button logo-center">
+                            <img src="img/logo.png" alt="JM Jardins Logo">
+                        </a>
+                        <span>JM JARDINS</span>
+                    </h1>
+                    <p>A NOSSA GALERIA DE TRABALHOS</p>
+                </header>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="historia.html">Sobre Nós</a></li>
+                    <li><a href="contactos.html">Contacte-nos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper style1 galeria-fundo">
+            <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 30px;">Fotos dos Trabalhos</h2>
+            
+            <div style="text-align: center;">
+                <img src="img/img 1.jpeg">
+                <img src="img/img 2.jpeg">
+                <img src="img/img 3.jpeg">
+                <img src="img/img 4.jpeg">
+                <img src="img/img 5.jpeg">
+                <img src="img/img 6.jpeg">
+                <img src="img/img 7.jpeg">
+                <img src="img/img 8.jpeg">
+                <img src="img/img 9.jpeg">
+                <img src="img/img 10.jpeg">
+                <img src="img/img 11.jpeg">
+                <img src="img/img 12.jpeg">
+                <img src="img/img 13.jpeg">
+                <img src="img/img 14.jpeg">
+                <img src="img/img 15.jpeg">
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="container">
+                <p>&copy; JM Jardins - Vila Nova de Famalicão</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
