@@ -106,6 +106,47 @@ margin-bottom: 0 !important;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         display: flex; flex-direction: column; justify-content: center; align-items: center;
         border: none !important; padding: 0 !important; margin-bottom: 0 !important;
+
+        /* --- FORÇA BRUTA PARA O MENU NO TELEMÓVEL --- */
+    @media screen and (max-width: 980px) { 
+        /* Aumentei para 980px para garantir que apanha o tablet também */
+
+        #nav { 
+            display: block !important; 
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: relative !important; 
+            top: 0 !important; 
+            background: #2E5A27 !important; 
+            width: 100% !important;
+            height: auto !important;
+            margin-top: 20px !important;
+            z-index: 9999 !important; /* Para ficar por cima de tudo */
+        }
+
+        #nav ul { 
+            display: block !important; 
+            visibility: visible !important;
+            opacity: 1 !important;
+            text-align: center !important;
+        }
+
+        #nav ul li { 
+            display: block !important; 
+            border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+            padding: 15px 0 !important;
+            margin: 0 !important;
+        }
+
+        #nav ul li a { 
+            display: block !important;
+            color: #ffffff !important; 
+            text-decoration: none !important;
+        }
+
+        /* Se houver algum botão de menu (hambúrguer) escondido, apagamos */
+        .navPanel, .navButton, #navButton { display: none !important; }
+    }
     }
 </style>
 </head>
