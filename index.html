@@ -104,44 +104,45 @@ background-attachment: fixed !important;
         display: flex; flex-direction: column; justify-content: center; align-items: center;
         border: none !important; padding: 0 !important; margin-bottom: 0 !important;
 
-        /* --- CORREÇÃO DO MENU NO TELEMÓVEL (SEM JS) --- */
-    @media screen and (max-width: 736px) {
-        
-        /* Obriga o menu a aparecer e dá-lhe o fundo verde */
+        /* --- FORÇA BRUTA PARA O MENU NO TELEMÓVEL --- */
+    @media screen and (max-width: 980px) { 
+        /* Aumentei para 980px para garantir que apanha o tablet também */
+
         #nav { 
-            position: relative !important; 
-            top: 0 !important; 
             display: block !important; 
             visibility: visible !important;
             opacity: 1 !important;
-            background: #2E5A27 !important; /* Verde da JM Jardins */
+            position: relative !important; 
+            top: 0 !important; 
+            background: #2E5A27 !important; 
+            width: 100% !important;
+            height: auto !important;
             margin-top: 20px !important;
-            padding: 10px 0 !important;
-            border-radius: 5px !important;
+            z-index: 9999 !important; /* Para ficar por cima de tudo */
         }
 
-        /* Organiza os links em lista */
         #nav ul { 
-            display: flex !important; 
-            flex-direction: column !important; 
-            padding: 0 !important;
-            margin: 0 !important;
+            display: block !important; 
+            visibility: visible !important;
+            opacity: 1 !important;
+            text-align: center !important;
         }
 
         #nav ul li { 
             display: block !important; 
-            padding: 12px 0 !important; 
-            margin: 0 !important;
             border-bottom: 1px solid rgba(255,255,255,0.1) !important;
-            text-align: center !important;
+            padding: 15px 0 !important;
+            margin: 0 !important;
         }
 
-        #nav ul li:last-child { border: none !important; }
-        
-        #nav ul li a {
-            color: #ffffff !important;
-            font-size: 1em !important;
+        #nav ul li a { 
+            display: block !important;
+            color: #ffffff !important; 
+            text-decoration: none !important;
         }
+
+        /* Se houver algum botão de menu (hambúrguer) escondido, apagamos */
+        .navPanel, .navButton, #navButton { display: none !important; }
     }
     }
 </style>
