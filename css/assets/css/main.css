@@ -3142,4 +3142,38 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
+		/* MÁGICA PARA O MENU APARECER NO TELEMÓVEL */
+    @media screen and (max-width: 980px) {
+        #nav {
+            display: block !important; /* Força o menu a sair do 'none' */
+            visibility: visible !important;
+            position: relative !important;
+            top: 0 !important;
+            background: #2E5A27 !important; /* Fundo verde JM */
+            margin: 20px auto !important;
+            width: 90% !important;
+            border-radius: 8px;
+        }
+
+        #nav ul {
+            display: flex !important;
+            flex-direction: column !important; /* Mete os links em fila vertical */
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        #nav ul li {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 10px 0 !important;
+            margin: 0 !important;
+        }
+
+        #nav ul li a {
+            color: #fff !important;
+            display: block !important;
+            text-align: center !important;
+        }
+    }
+
 	}
