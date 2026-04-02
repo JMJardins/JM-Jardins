@@ -103,6 +103,46 @@ background-attachment: fixed !important;
         /* flex no p tbm pra garantir q n mexe */
         display: flex; flex-direction: column; justify-content: center; align-items: center;
         border: none !important; padding: 0 !important; margin-bottom: 0 !important;
+
+        /* --- CORREÇÃO DO MENU NO TELEMÓVEL (SEM JS) --- */
+    @media screen and (max-width: 736px) {
+        
+        /* Obriga o menu a aparecer e dá-lhe o fundo verde */
+        #nav { 
+            position: relative !important; 
+            top: 0 !important; 
+            display: block !important; 
+            visibility: visible !important;
+            opacity: 1 !important;
+            background: #2E5A27 !important; /* Verde da JM Jardins */
+            margin-top: 20px !important;
+            padding: 10px 0 !important;
+            border-radius: 5px !important;
+        }
+
+        /* Organiza os links em lista */
+        #nav ul { 
+            display: flex !important; 
+            flex-direction: column !important; 
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        #nav ul li { 
+            display: block !important; 
+            padding: 12px 0 !important; 
+            margin: 0 !important;
+            border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+            text-align: center !important;
+        }
+
+        #nav ul li:last-child { border: none !important; }
+        
+        #nav ul li a {
+            color: #ffffff !important;
+            font-size: 1em !important;
+        }
+    }
     }
 </style>
 </head>
